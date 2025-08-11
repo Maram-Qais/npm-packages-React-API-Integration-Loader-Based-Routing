@@ -1,4 +1,4 @@
-import type { PackageDetails } from '../types/PackageDetails';
+import type { PackageDetails } from 'types/PackageDetails';
 
 
 import { getFeaturedPackages } from "../../api/queries/getFeaturedPackages";
