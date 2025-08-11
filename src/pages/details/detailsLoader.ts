@@ -1,5 +1,6 @@
 import { getPackage } from "../../api/queries/getPackage";
-import type { PackageDetails } from 'api/types/PackageDetails';
+import type { PackageDetails } from '../types/PackageDetails';
+
 
 
 import type { Params } from "react-router-dom";

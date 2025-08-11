@@ -1,5 +1,5 @@
 
-import type { PackageDetails } from 'api/types/PackageDetails';
+import type { PackageDetails } from '../types/PackageDetails';
 
 
 
