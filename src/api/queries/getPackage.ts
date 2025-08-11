@@ -1,4 +1,5 @@
-import type { PackageDetails } from "../../api/types/PackageDetails";
+import type { PackageDetails } from 'api/types/PackageDetails';
+
 
 
 export async function getPackage(name: string)
