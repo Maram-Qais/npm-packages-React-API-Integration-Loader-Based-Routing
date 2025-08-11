@@ -9,16 +9,13 @@ export default function SearchPage() {
   const { searchResults } = useLoaderData() as SearchLoaderResult;
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Calculate total pages
   const totalPages = Math.ceil(searchResults.length / ITEMS_PER_PAGE);
 
-  // Slice results for current page
   const paginatedResults = searchResults.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
     currentPage * ITEMS_PER_PAGE
   );
 
-  // Handlers for pagination
   const goPrev = () => setCurrentPage((p) => Math.max(p - 1, 1));
   const goNext = () => setCurrentPage((p) => Math.min(p + 1, totalPages));
 
@@ -36,7 +33,6 @@ export default function SearchPage() {
         )}
       </div>
 
-      {/* Pagination controls */}
       {totalPages > 1 && (
         <div className="flex justify-center items-center gap-4 mt-6">
           <button

@@ -1,4 +1,9 @@
-import type { PackageDetails } from '../types/packageDetails';
+
+import type { PackageDetails } from "../../api/types/PackageDetails";
+
+
+
+
 
 
 
